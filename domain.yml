@@ -1,0 +1,50 @@
+intents:
+- greet
+- goodbye
+- thanks
+- deny
+- joke
+- name
+- appointment
+- set
+
+
+entities:
+- name
+
+
+slots:
+  name:
+    type: text
+
+
+actions:
+- utter_name
+- utter_thanks
+- utter_greet
+- utter_goodbye
+- utter_appointment
+- utter_set
+- action_joke
+
+
+templates:
+  utter_name:
+  - text: "Hey there! Tell me your name."
+
+  utter_greet:
+  - text: "Nice to you meet you {name}. How can I help?"
+
+  utter_goodbye:
+  - text: "Talk to you later!"
+  
+  utter_thanks:
+  - text: "My pleasure."
+
+  utter_appointment:
+  - text: "Sure! When, where, and with whom would you like it"
+
+  utter_set:
+  - text: "Your appointment with Dr. Russell McDonald has been set for Sunday at 10:00 am."
+
+  
